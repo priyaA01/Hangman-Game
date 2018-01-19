@@ -1,0 +1,41 @@
+body{
+	
+	background-color: cornflowerblue;
+}
+header{
+	background-color: cornflowerblue;
+	padding:10px;	
+	font-size:25px;
+}
+#errorMsg{
+	display:none;
+	background-color: red;
+	padding:5px;	
+	font-size:25px;
+}
+.mainContainer{
+	background-color: yellowgreen;
+}
+.btn{
+	margin: 25%;
+}
+#word,#letter{
+	padding:30px; 
+	text-align: center;
+	border: 2px solid lightgreen;
+}
+#wordHidden{
+	display:none;
+}
+
+
+/* @keyframes animation {
+    from {width: 75%;}
+    to {width: 25%;}
+}
+
+#imgMap
+{
+	animation: animation 5s infinite alternate;
+	
+} */
