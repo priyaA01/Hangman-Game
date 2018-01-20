@@ -1,41 +1,74 @@
 body{
-	
-	background-color: cornflowerblue;
+     background-color: cornflowerblue;
+     /*background-image:url("../images/circles.png");*/
 }
-header{
-	background-color: cornflowerblue;
-	padding:10px;	
-	font-size:25px;
+ header{
+     background-color: cornflowerblue;
+     padding:10px;
+     font-size:70px;
+     color:white;
+     font-family: 'Risque', cursive;
+     margin-bottom:30px;
 }
-#errorMsg{
-	display:none;
-	background-color: red;
-	padding:5px;	
-	font-size:25px;
+ .mainContainer{
+    width:90%;
+     background-color: yellowgreen;
+     height:auto;
 }
-.mainContainer{
-	background-color: yellowgreen;
+ .btn{
+     margin-top:5%;
+     white-space: normal;
+     margin-bottom:25%;
 }
-.btn{
-	margin: 25%;
+ #word,#letter{
+     margin-top:20px;
+     padding:30px;
+     text-align: center;
+     border: 2px solid lightgreen;
+     font-size:70px;
+     font-family: 'Roboto Slab', serif;
 }
-#word,#letter{
-	padding:30px; 
-	text-align: center;
-	border: 2px solid lightgreen;
+ #errorMsg{
+     display:none;
+     color:white;
+     background-color: darkgreen;
+     padding:5px;
+     font-size:25px;
 }
-#wordHidden{
-	display:none;
+ #wordHidden,#correctSound,#wrongSound{
+     display:none;
 }
+ #imgMap{
+     padding-top:40px;
+     padding-left:10px;
+}
+ #tableHeader{
+     padding:3px;
+     text-align: center;
+     background-color:darkgreen;
+     font-size:30px;
+     font-family: 'Dancing Script', cursive;
+     color:white;
+}
+.tableContent{
+    font-size:20px;
+ }
+table{
 
+     margin-top:40px;
+     margin-bottom:20px;
+}
+      
 
 /* @keyframes animation {
-    from {width: 75%;}
-    to {width: 25%;}
+     from {
+        width: 75%;
+    }
+     to {
+        width: 25%;
+    }
 }
-
-#imgMap
-{
-	animation: animation 5s infinite alternate;
-	
-} */
+ #imgMap {
+     animation: animation 5s infinite alternate;
+}
+ */
