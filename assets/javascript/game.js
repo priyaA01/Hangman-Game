@@ -1,9 +1,6 @@
 /*  global variables declaration */
-var lettersAlreadyGuessed = [];
 var wins = 0;
-var losses = 0;
-var guessesRemaining = 0;
-var lettersGuessed = [];
+
 
 /* function  to start game ,displays the hidden word to find , and allows user to strt entering letters*/
 function wordList() {
@@ -13,8 +10,8 @@ function wordList() {
     document.getElementById("letter").innerHTML = "";
     document.getElementById("lettersGuessed").innerHTML = "";
     document.getElementById("guessesRemaining").innerHTML = "10";
-    guessesRemaining = 10;
-    lettersGuessed = [];
+    var guessesRemaining = 10;
+    var lettersGuessed = [];
     var words = ["Australia", "Brazil", "Canada", "Denmark", "Egypt", "France", "India", "Japan", "China", "Mexico"];
     var wordToFind = words[Math.floor(Math.random() * words.length)];
     var displayHyphen = "";
@@ -27,7 +24,7 @@ function wordList() {
 
     document.getElementById("word").innerHTML = displayHyphen;
     document.getElementById("wordHidden").innerHTML = wordToFind;
-    console.log("Word to find   " + wordToFind);
+    //console.log("Word to find   " + wordToFind);
 
 
     document.onkeyup = function(event) {
@@ -51,7 +48,7 @@ function matchingLetters(letterEntered) {
     var wordToFind = (document.getElementById("wordHidden").innerHTML).toLowerCase();
     var displayHyphen = document.getElementById("word").innerHTML;
 
-    console.log(wordToFind + "and" + displayHyphen.length);
+    //console.log(wordToFind + "and" + displayHyphen.length);
 
     if (wordToFind.indexOf(letterEntered) > -1) {
         for (var i = 0; i < wordToFind.length; i++) {
@@ -59,18 +56,15 @@ function matchingLetters(letterEntered) {
                 displayHyphen = setCharAt(displayHyphen, i, letterEntered);
             }
         }
-    } else {
-        document.getElementById("wrongSound").play();
-        if (lettersGuessed.indexOf(letterEntered) === -1) {
-            lettersGuessed.push(letterEntered);
-        }
-        document.getElementById("lettersGuessed").innerHTML = lettersGuessed;
-
-        guessesRemaining--;
-        document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
-        console.log("letter is not in the word" + guessesRemaining);
     }
-
+     else if (lettersGuessed.indexOf(letterEntered) === -1 && guessesRemaining!=0)
+            {
+                document.getElementById("wrongSound").play();
+                lettersGuessed.push(letterEntered);
+                document.getElementById("lettersGuessed").innerHTML = lettersGuessed;
+                guessesRemaining--;
+                document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
+           } 
     document.getElementById("word").innerHTML = displayHyphen;
 
     if (displayHyphen === wordToFind) {
@@ -78,12 +72,9 @@ function matchingLetters(letterEntered) {
         document.getElementById("correctSound").play();
         wins++;
         document.getElementById("wins").innerHTML = wins;
-        console.log("score increased " + wins);
+        //console.log("score increased " + wins);
         wordList();
     } else if (displayHyphen != wordToFind && guessesRemaining === 0) {
-        /*losses++;
-			document.getElementById("losses").innerHTML = losses;
-			console.log("You Lost ! Try again " +losses);*/
         wordList();
     }
 
