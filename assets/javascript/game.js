@@ -1,6 +1,7 @@
 /*  global variables declaration */
 var wins = 0;
-
+var guessesRemaining = 10;
+var lettersGuessed = [];
 
 /* function  to start game ,displays the hidden word to find , and allows user to strt entering letters*/
 function wordList() {
@@ -10,8 +11,8 @@ function wordList() {
     document.getElementById("letter").innerHTML = "";
     document.getElementById("lettersGuessed").innerHTML = "";
     document.getElementById("guessesRemaining").innerHTML = "10";
-    var guessesRemaining = 10;
-    var lettersGuessed = [];
+    guessesRemaining = 10;
+    lettersGuessed = [];
     var words = ["Australia", "Brazil", "Canada", "Denmark", "Egypt", "France", "India", "Japan", "China", "Mexico"];
     var wordToFind = words[Math.floor(Math.random() * words.length)];
     var displayHyphen = "";

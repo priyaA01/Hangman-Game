@@ -47,7 +47,7 @@ var gameObject = {
         if (d.classList.contains("colorChange")) {
             d.classList.remove("colorChange");
         }
-        if (wordToFind.indexOf(letterEntered) > -1) {
+        if (wordToFind.indexOf(letterEntered) > -1 && guessesRemaining != 0) {
             for (var i = 0; i < wordToFind.length; i++) {
                 if (wordToFind.charAt(i) == letterEntered) {
                     displayHyphen = this.setCharAt(displayHyphen, i, letterEntered);
