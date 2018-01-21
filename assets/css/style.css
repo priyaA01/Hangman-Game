@@ -1,44 +1,46 @@
  html{
-    min-height: 100%;
-    position:relative;
- }
-
+     min-height: 100%;
+     position:relative;
+}
  body{
-     background-color: cornflowerblue;
      font-size:70px;
      width:100%;
 }
  header{
-     background-color: cornflowerblue;
      padding:10px;
      font-size:80px;
-     color:white;
+     color:black;
      font-family: 'Risque', cursive;
      margin-bottom:30px;
 }
  .mainContainer{
      width:90%;
-     background-color: yellowgreen;
+     background-image: url("../images/background1.png");
+     background-repeat: no-repeat;
+     background-size: contain;
      height:auto;
      margin-bottom: 50px;
-}           
+}
  footer{
      position:absolute;
      bottom:0;
      left:0;
      width:100%;
      clear:both;
-     color:white;
+     color:black;
      height:30px;
      font-size:15px;
 }
  .btn{
-     margin-top:5%;
+     margin-top:8%;
      white-space: normal;
-     margin-bottom:25%;
-     width:25%;
+     margin-bottom:5%;
+     width:15%;
+     background-color: black;
+     color:white;
 }
  #word,#letter{
+     color:black;
      margin-top:20px;
      padding:30px;
      text-align: center;
@@ -48,28 +50,24 @@
  #errorMsg{
      display:none;
      color:white;
-     background-color: darkgreen;
+     background-color: black;
      padding:5px;
      font-size:25px;
 }
  #wordHidden, #correctSound,#wrongSound,#backgroundSound{
      display:none;
 }
-
- #imgMap{
-     margin-top:40px;
-     padding-left:20px;
-}
  #tableHeader{
      padding:5px;
      text-align: center;
-     background-color:darkgreen;
+     background-color:black;
      font-size:30px;
      font-family: 'Dancing Script', cursive;
      color:white;
 }
  .tableContent{
      font-size:20px;
+     color:black;
 }
  table{
      margin-top:40px;
@@ -88,27 +86,25 @@
  .colorChange {
      animation: animation 1s infinite alternate;
 }
- 
 /* media queries */
-
  @media screen and (max-width:768px) {
      header{
-        font-size:40px;
-     }
-
+         font-size:40px;
+    }
 }
-@media screen and (max-width:640px) {
+ @media screen and (max-width:640px) {
      body{
-        font-size:15px;
-     }
+         font-size:15px;
+    }
      header{
-        font-size:20px;
-     }
+         font-size:20px;
+    }
      footer{
-        font-size: 10px;
-        height:20px;
-     }
-
-} 
-
-  
+         font-size: 10px;
+         height:20px;
+    }
+     #tableHeader,.tableContent,span{
+         font-size:10px;
+    }
+}
+ 

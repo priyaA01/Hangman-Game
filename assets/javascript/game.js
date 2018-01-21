@@ -51,7 +51,7 @@ function matchingLetters(letterEntered) {
 
     //console.log(wordToFind + "and" + displayHyphen.length);
 
-    if (wordToFind.indexOf(letterEntered) > -1) {
+    if (wordToFind.indexOf(letterEntered) > -1  && guessesRemaining != 0) {
         for (var i = 0; i < wordToFind.length; i++) {
             if (wordToFind.charAt(i) == letterEntered) {
                 displayHyphen = setCharAt(displayHyphen, i, letterEntered);
