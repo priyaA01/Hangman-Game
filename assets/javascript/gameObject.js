@@ -86,7 +86,7 @@ var gameObject = {
         document.getElementById("wins").innerHTML = wins;
         this.displayWord();
 
-    },
+    }
 
 };
 

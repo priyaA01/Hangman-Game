@@ -3,21 +3,21 @@
      position:relative;
 }
  body{
+     background-color:cornflowerblue;
      font-size:70px;
      width:100%;
 }
  header{
+     background-color:cornflowerblue;
      padding:10px;
      font-size:80px;
-     color:black;
+     color:white;
      font-family: 'Risque', cursive;
      margin-bottom:30px;
 }
  .mainContainer{
+     background-color:yellowgreen;
      width:90%;
-     background-image: url("../images/background1.png");
-     background-repeat: no-repeat;
-     background-size: contain;
      height:auto;
      margin-bottom: 50px;
 }
@@ -27,7 +27,7 @@
      left:0;
      width:100%;
      clear:both;
-     color:black;
+     color:white;
      height:30px;
      font-size:15px;
 }
@@ -35,9 +35,13 @@
      margin-top:8%;
      white-space: normal;
      margin-bottom:5%;
-     width:15%;
-     background-color: black;
-     color:white;
+     width:35%;
+}
+ #imgMap{
+     margin-top:10px;
+     margin-bottom:10px;
+     padding:20px;
+     width:100%;
 }
  #word,#letter{
      color:black;
@@ -50,7 +54,7 @@
  #errorMsg{
      display:none;
      color:white;
-     background-color: black;
+     background-color:black;
      padding:5px;
      font-size:25px;
 }
@@ -60,17 +64,16 @@
  #tableHeader{
      padding:5px;
      text-align: center;
-     background-color:black;
+     background-color:darkgreen;
      font-size:30px;
      font-family: 'Dancing Script', cursive;
      color:white;
 }
  .tableContent{
      font-size:20px;
-     color:black;
 }
  table{
-     margin-top:40px;
+     margin-top:30px;
      margin-bottom:20px;
      overflow-x:auto;
      width:100%;
