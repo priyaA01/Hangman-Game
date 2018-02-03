@@ -14,7 +14,6 @@ var gameObject = {
     so the user can guess the letter behind each hyphen*/
 
     displayWord: function() {
-        document.getElementById("backgroundSound").play();
         document.getElementById("errorMsg").style.display = "none";
         document.getElementById("word").innerHTML = "";
         document.getElementById("wordHidden").innerHTML = "";
@@ -54,7 +53,6 @@ var gameObject = {
                 }
             }
         } else if (lettersGuessed.indexOf(letterEntered) === -1 && guessesRemaining != 0) {
-            document.getElementById("wrongSound").play();
             lettersGuessed.push(letterEntered);
             document.getElementById("lettersGuessed").innerHTML = lettersGuessed;
             guessesRemaining--;
@@ -81,11 +79,9 @@ var gameObject = {
     /* updateScore function is called to update the wins if the user guesses the word correctly before the guessesRemaining becomes zero*/
 
     updateScore: function() {
-        document.getElementById("correctSound").play();
         wins++;
         document.getElementById("wins").innerHTML = wins;
         this.displayWord();
-
     }
 
 };

@@ -1,76 +1,93 @@
- html{
-     min-height: 100%;
-     position:relative;
-}
- body{
-     min-height:100%;
-     background-image: url("../images/background.png");
-}
- header{
-     padding:10px;
-     color:black;
-     font-family: 'Risque', cursive; 
-}
-h1{
-    font-size:60px;     
-}
- .mainContainer{
-     margin-bottom: 80px;
-}
-#box{
-     background-color: white;
-     border-radius:20px;
-     border: 1px solid black;
-     padding: 10px;
-     box-shadow: 10px 10px #888888;
-}
- footer{
-     position:absolute;
-     bottom:0;
-     left:0;
-     width:100%;
-     clear:both;
-     color:black;
-     height:20px;
-     font-size:15px;
-}
- .btn{
-     margin-bottom:4%;
-     background-color: black;
-     color:white;
-}
- #word,#letter{
-     color:black;
-     text-align: center;
-     font-size:35px;
-     font-family: 'Roboto Slab', serif;
-}
- #errorMsg{
-     display:none;
-     color:white;
-     background-color:black;
-     font-size:25px;
-}
-span,#span{
-    font-size:20px;
-    font-family: 'Dancing Script';
-}
-#guessesRemaining,#wins,#lettersGuessed{
-    font-size:20px;
-   font-family: 'Risque';
-}
- #wordHidden, #correctSound,#wrongSound,#backgroundSound{
-     display:none;
+html {
+    min-height: 100%;
+    position: relative;
 }
 
- @keyframes animation {
-     from {
-         background-color: white;
+body {
+    min-height: 100%;
+    background-image: url("../images/background.png");
+}
+
+header {
+    padding: 10px;
+    color: black;
+    font-family: 'Risque', cursive;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.mainContainer {
+    margin-bottom: 80px;
+}
+
+#box {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 10px 10px #888888;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+    color: black;
+    height: 20px;
+    font-size: 15px;
+}
+
+.btn {
+    margin-bottom: 4%;
+    background-color: black;
+    color: white;
+}
+
+#word,
+#letter {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#errorMsg {
+    display: none;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
+
+span,
+#span {
+    font-size: 20px;
+    font-family: 'Dancing Script';
+}
+
+#guessesRemaining,
+#wins,
+#lettersGuessed {
+    font-size: 20px;
+    font-family: 'Risque';
+}
+
+#wordHidden {
+    display: none;
+}
+
+@keyframes animation {
+    from {
+        background-color: white;
     }
-     to {
-         background-color: crimson ;
+    to {
+        background-color: crimson;
     }
 }
- .colorChange {
-     animation: animation 1s alternate;
+
+.colorChange {
+    animation: animation 1s alternate;
 }
