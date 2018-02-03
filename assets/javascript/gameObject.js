@@ -2,7 +2,7 @@
 var wins = 0;
 var guessesRemaining = 10;
 var lettersGuessed = [];
-var d = document.getElementById("containerColor");
+var d = document.getElementById("box");
 
 /* an object gameObject is declared with property and methods */
 var gameObject = {

@@ -3,23 +3,26 @@
      position:relative;
 }
  body{
-     background-color:cornflowerblue;
-     font-size:70px;
-     width:100%;
+     min-height:100%;
+     background-image: url("../images/background.png");
 }
  header{
-     background-color:cornflowerblue;
      padding:10px;
-     font-size:80px;
-     color:white;
-     font-family: 'Risque', cursive;
-     margin-bottom:30px;
+     color:black;
+     font-family: 'Risque', cursive; 
+}
+h1{
+    font-size:60px;     
 }
  .mainContainer{
-     background-color:yellowgreen;
-     width:90%;
-     height:auto;
-     margin-bottom: 50px;
+     margin-bottom: 80px;
+}
+#box{
+     background-color: white;
+     border-radius:20px;
+     border: 1px solid black;
+     padding: 10px;
+     box-shadow: 10px 10px #888888;
 }
  footer{
      position:absolute;
@@ -27,87 +30,47 @@
      left:0;
      width:100%;
      clear:both;
-     color:white;
-     height:30px;
+     color:black;
+     height:20px;
      font-size:15px;
 }
  .btn{
-     margin-top:8%;
-     white-space: normal;
-     margin-bottom:5%;
-     width:35%;
-}
- #imgMap{
-     margin-top:10px;
-     margin-bottom:10px;
-     padding:20px;
-     width:100%;
+     margin-bottom:4%;
+     background-color: black;
+     color:white;
 }
  #word,#letter{
      color:black;
-     margin-top:20px;
-     padding:30px;
      text-align: center;
-     font-size:70px;
+     font-size:35px;
      font-family: 'Roboto Slab', serif;
 }
  #errorMsg{
      display:none;
      color:white;
      background-color:black;
-     padding:5px;
      font-size:25px;
+}
+span,#span{
+    font-size:20px;
+    font-family: 'Dancing Script';
+}
+#guessesRemaining,#wins,#lettersGuessed{
+    font-size:20px;
+   font-family: 'Risque';
 }
  #wordHidden, #correctSound,#wrongSound,#backgroundSound{
      display:none;
 }
- #tableHeader{
-     padding:5px;
-     text-align: center;
-     background-color:darkgreen;
-     font-size:30px;
-     font-family: 'Dancing Script', cursive;
-     color:white;
-}
- .tableContent{
-     font-size:20px;
-}
- table{
-     margin-top:30px;
-     margin-bottom:20px;
-     overflow-x:auto;
-     width:100%;
-}
+
  @keyframes animation {
      from {
-         background-color: yellowgreen;
+         background-color: white;
     }
      to {
          background-color: crimson ;
     }
 }
  .colorChange {
-     animation: animation 1s infinite alternate;
+     animation: animation 1s alternate;
 }
-/* media queries */
- @media screen and (max-width:768px) {
-     header{
-         font-size:40px;
-    }
-}
- @media screen and (max-width:640px) {
-     body{
-         font-size:15px;
-    }
-     header{
-         font-size:20px;
-    }
-     footer{
-         font-size: 10px;
-         height:20px;
-    }
-     #tableHeader,.tableContent,span{
-         font-size:10px;
-    }
-}
- 

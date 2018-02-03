@@ -7,7 +7,7 @@ This game will run in the browser, and feature dynamically updated HTML and CSS 
 
 - This game contains words of Country names and uses key events to listen for the letters that players will type.
 
-- Press Start button to get started.
+- Users should Press Start button to get started.
 
 - For each word players are given 10 guesses to find the word.
 
