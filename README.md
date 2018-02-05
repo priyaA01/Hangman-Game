@@ -1,9 +1,19 @@
 # Hangman-Game
 
 
-This game will run in the browser, and feature dynamically updated HTML and CSS powered by JavaScript code.
+This game will run in the browser, and feature dynamically updated HTML and CSS powered by Vanilla JavaScript.
 
-## Getting Started
+Using Vanilla Javascript, once user clicks on start button, a country name is randomly picked from an array and shown with the letters replaced by hyphens for the user to guess the word.
+
+Using Javascript onKeyup event handler we display letters entered by the users.
+
+If any letter matches with the letters in the word, we replace the hyphen with the letter in the repective positions of the word. 
+
+## Chellenges
+
+If the user entered letter appears in many places in the given word, then to replace hyphen with letter in all those indexes was a challenge I tried to figure out and finally got it.
+
+### How it Works
 
 - This game contains words of Country names and uses key events to listen for the letters that players will type.
 
@@ -19,6 +29,6 @@ This game will run in the browser, and feature dynamically updated HTML and CSS 
 
 - After the user wins/loses the game automatically choose another word and make the user play it .
 
-### Author
+#### Author
 
  Priya Ammaiyappan
